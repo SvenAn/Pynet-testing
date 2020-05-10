@@ -16,7 +16,11 @@ ciscoswitch1 = {
 }
 
 net_connect = ConnectHandler( **ciscoswitch1 )
-print( net_connect.find_prompt() )
+#print( net_connect.find_prompt() )
+version = net_connect.send_command("show version")
 
+file = open('switchversion.txt', 'w')
+file.write( version )
+file.close()
 
 net_connect.disconnect()

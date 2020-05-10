@@ -15,8 +15,17 @@ ciscoswitch1 = {
     "session_log": "session.txt",
 }
 
-net_connect = ConnectHandler( **ciscoswitch1 )
-print( net_connect.find_prompt() )
+ciscoswitch2 = { 
+    "device_type": "cisco_ios",
+    "host":        "cisco4.lasthop.io",
+    "username":    "pyclass",
+    "password":    password,
+    "session_log": "session.txt",
+}
+
+for switch in ( ciscoswitch1, ciscoswitch2 ):
+    net_connect = ConnectHandler( **switch )
+    print( net_connect.find_prompt() )
 
 
 net_connect.disconnect()
