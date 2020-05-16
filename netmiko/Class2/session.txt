@@ -27,158 +27,155 @@ http://www.gnu.org/licenses/lgpl.html
 *  Cisco in writing.                                                      *
 ***************************************************************************
 
-nxos1# 
+nxos2# 
 
-nxos1# terminal length 0
+nxos2# terminal length 0
 
-nxos1# terminal width 511
+nxos2# terminal width 511
 
-nxos1# 
+nxos2# 
 
-nxos1# show lldp neighbors detail
-Capability codes:
-  (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
-  (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
-Device ID            Local Intf      Hold-time  Capability  Port ID  
+nxos2# config term
+Enter configuration commands, one per line. End with CNTL/Z.
 
-Chassis id: 5254.0012.345e
-Port id: Ethernet1/1
-Local Port id: Eth1/1
-Port Description: Ethernet1/1
-System Name: nxos2.bogus.com
-System Description: Cisco Nexus Operating System (NX-OS) Software 9.2(3)
-TAC support: http://www.cisco.com/tac
-Copyright (c) 2002-2019, Cisco Systems, Inc. All rights reserved.
-Time remaining: 103 seconds
-System Capabilities: B, R
-Enabled Capabilities: B, R
-Management Address: 10.0.2.16
-Management Address IPV6: not advertised
-Vlan ID: not advertised
+nxos2(config)# 
 
+nxos2(config)# vlan 200
 
-Chassis id: 5254.0012.345f
-Port id: Ethernet1/2
-Local Port id: Eth1/2
-Port Description: Ethernet1/2
-System Name: nxos2.bogus.com
-System Description: Cisco Nexus Operating System (NX-OS) Software 9.2(3)
-TAC support: http://www.cisco.com/tac
-Copyright (c) 2002-2019, Cisco Systems, Inc. All rights reserved.
-Time remaining: 103 seconds
-System Capabilities: B, R
-Enabled Capabilities: B, R
-Management Address: 10.0.2.16
-Management Address IPV6: not advertised
-Vlan ID: not advertised
+nxos2(config-vlan)# name Testvlan200
 
+nxos2(config-vlan)# vlan 201
 
-Chassis id: 5254.0012.3460
-Port id: Ethernet1/3
-Local Port id: Eth1/3
-Port Description: Ethernet1/3
-System Name: nxos2.bogus.com
-System Description: Cisco Nexus Operating System (NX-OS) Software 9.2(3)
-TAC support: http://www.cisco.com/tac
-Copyright (c) 2002-2019, Cisco Systems, Inc. All rights reserved.
-Time remaining: 103 seconds
-System Capabilities: B, R
-Enabled Capabilities: B, R
-Management Address: 10.0.2.16
-Management Address IPV6: not advertised
-Vlan ID: not advertised
+nxos2(config-vlan)# name Testvlan201
 
+nxos2(config-vlan)# vlan 202
 
-Chassis id: 5254.0012.3461
-Port id: Ethernet1/4
-Local Port id: Eth1/4
-Port Description: Ethernet1/4
-System Name: nxos2.bogus.com
-System Description: Cisco Nexus Operating System (NX-OS) Software 9.2(3)
-TAC support: http://www.cisco.com/tac
-Copyright (c) 2002-2019, Cisco Systems, Inc. All rights reserved.
-Time remaining: 103 seconds
-System Capabilities: B, R
-Enabled Capabilities: B, R
-Management Address: 10.0.2.16
-Management Address IPV6: not advertised
-Vlan ID: not advertised
+nxos2(config-vlan)# name Testvlan202
 
-Total entries displayed: 4
+nxos2(config-vlan)# vlan 203
 
-nxos1# 
+nxos2(config-vlan)# name Testvlan203
 
-nxos1# show lldp neighbors detail
-Capability codes:
-  (R) Router, (B) Bridge, (T) Telephone, (C) DOCSIS Cable Device
-  (W) WLAN Access Point, (P) Repeater, (S) Station, (O) Other
-Device ID            Local Intf      Hold-time  Capability  Port ID  
+nxos2(config-vlan)# vlan 204
 
-Chassis id: 5254.0012.345e
-Port id: Ethernet1/1
-Local Port id: Eth1/1
-Port Description: Ethernet1/1
-System Name: nxos2.bogus.com
-System Description: Cisco Nexus Operating System (NX-OS) Software 9.2(3)
-TAC support: http://www.cisco.com/tac
-Copyright (c) 2002-2019, Cisco Systems, Inc. All rights reserved.
-Time remaining: 99 seconds
-System Capabilities: B, R
-Enabled Capabilities: B, R
-Management Address: 10.0.2.16
-Management Address IPV6: not advertised
-Vlan ID: not advertised
+nxos2(config-vlan)# name Testvlan204
 
+nxos2(config-vlan)# 
 
-Chassis id: 5254.0012.345f
-Port id: Ethernet1/2
-Local Port id: Eth1/2
-Port Description: Ethernet1/2
-System Name: nxos2.bogus.com
-System Description: Cisco Nexus Operating System (NX-OS) Software 9.2(3)
-TAC support: http://www.cisco.com/tac
-Copyright (c) 2002-2019, Cisco Systems, Inc. All rights reserved.
-Time remaining: 99 seconds
-System Capabilities: B, R
-Enabled Capabilities: B, R
-Management Address: 10.0.2.16
-Management Address IPV6: not advertised
-Vlan ID: not advertised
+nxos2(config-vlan)# end
 
+nxos2# 
 
-Chassis id: 5254.0012.3460
-Port id: Ethernet1/3
-Local Port id: Eth1/3
-Port Description: Ethernet1/3
-System Name: nxos2.bogus.com
-System Description: Cisco Nexus Operating System (NX-OS) Software 9.2(3)
-TAC support: http://www.cisco.com/tac
-Copyright (c) 2002-2019, Cisco Systems, Inc. All rights reserved.
-Time remaining: 99 seconds
-System Capabilities: B, R
-Enabled Capabilities: B, R
-Management Address: 10.0.2.16
-Management Address IPV6: not advertised
-Vlan ID: not advertised
+nxos2# 
 
+nxos2# 
 
-Chassis id: 5254.0012.3461
-Port id: Ethernet1/4
-Local Port id: Eth1/4
-Port Description: Ethernet1/4
-System Name: nxos2.bogus.com
-System Description: Cisco Nexus Operating System (NX-OS) Software 9.2(3)
-TAC support: http://www.cisco.com/tac
-Copyright (c) 2002-2019, Cisco Systems, Inc. All rights reserved.
-Time remaining: 99 seconds
-System Capabilities: B, R
-Enabled Capabilities: B, R
-Management Address: 10.0.2.16
-Management Address IPV6: not advertised
-Vlan ID: not advertised
+nxos2# copy running-config startup-config
 
-Total entries displayed: 4
+[#                                       ]   1%
+[#                                       ]   2%
+[##                                      ]   3%
+[##                                      ]   4%
+[###                                     ]   5%
+[###                                     ]   6%
+[###                                     ]   7%
+[####                                    ]   8%
+[####                                    ]   9%
+[#####                                   ]  10%
+[#####                                   ]  11%
+[#####                                   ]  12%
+[######                                  ]  13%
+[######                                  ]  14%
+[#######                                 ]  15%
+[#######                                 ]  16%
+[#######                                 ]  17%
+[########                                ]  18%
+[########                                ]  19%
+[#########                               ]  20%
+[#########                               ]  21%
+[#########                               ]  22%
+[##########                              ]  23%
+[##########                              ]  24%
+[###########                             ]  25%
+[###########                             ]  26%
+[###########                             ]  27%
+[############                            ]  28%
+[############                            ]  29%
+[#############                           ]  30%
+[#############                           ]  31%
+[#############                           ]  32%
+[##############                          ]  33%
+[##############                          ]  34%
+[###############                         ]  35%
+[###############                         ]  36%
+[###############                         ]  37%
+[################                        ]  38%
+[################                        ]  39%
+[#################                       ]  40%
+[#################                       ]  41%
+[#################                       ]  42%
+[##################                      ]  43%
+[##################                      ]  44%
+[###################                     ]  45%
+[###################                     ]  46%
+[###################                     ]  47%
+[####################                    ]  48%
+[####################                    ]  49%
+[#####################                   ]  50%
+[#####################                   ]  51%
+[#####################                   ]  52%
+[######################                  ]  53%
+[######################                  ]  54%
+[#######################                 ]  55%
+[#######################                 ]  56%
+[#######################                 ]  57%
+[########################                ]  58%
+[########################                ]  59%
+[#########################               ]  60%
+[#########################               ]  61%
+[#########################               ]  62%
+[##########################              ]  63%
+[##########################              ]  64%
+[###########################             ]  65%
+[###########################             ]  66%
+[###########################             ]  67%
+[############################            ]  68%
+[############################            ]  69%
+[#############################           ]  70%
+[#############################           ]  71%
+[#############################           ]  72%
+[##############################          ]  73%
+[##############################          ]  74%
+[###############################         ]  75%
+[###############################         ]  76%
+[###############################         ]  77%
+[################################        ]  78%
+[################################        ]  79%
+[#################################       ]  80%
+[#################################       ]  81%
+[#################################       ]  82%
+[##################################      ]  83%
+[##################################      ]  84%
+[###################################     ]  85%
+[###################################     ]  86%
+[###################################     ]  87%
+[####################################    ]  88%
+[####################################    ]  89%
+[#####################################   ]  90%
+[#####################################   ]  91%
+[#####################################   ]  92%
+[######################################  ]  93%
+[######################################  ]  94%
+[####################################### ]  95%
+[####################################### ]  96%
+[####################################### ]  97%
+[########################################]  98%
+[########################################] 100%
+Copy complete, now saving to disk (please wait)...
+Copy complete.
 
-nxos1# 
+nxos2# 
 
-nxos1# exit
+nxos2# 
+
+nxos2# exit
